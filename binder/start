@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Clone content 
+git clone https://github.com/mccullen/riverstyx-content.git
+
+# this must be last line according to 
+# https://repo2docker.readthedocs.io/en/latest/config_files.html#start-run-code-before-the-user-sessions-starts
+exec "$@"
